@@ -1,0 +1,40 @@
+.window {
+  width: 380px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  &__flex {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  textarea {
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+  }
+}
+
+.button {
+  &__send {
+    background-color: greenyellow;
+  }
+  &__clear {
+    background-color: aquamarine;
+  }
+}
