@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Home.module.scss";
 
-// const [tower, setTower] = useState("A");
-// const [time, setTime] = useState();
-// const [date, setDate] = useState();
-// const [commentary, setCommentary] = useState();
-
 const rooms = [
   {
     id: 1,
@@ -90,6 +85,66 @@ const floors = [
     id: 12,
     value: "12",
   },
+  {
+    id: 13,
+    value: "13",
+  },
+  {
+    id: 14,
+    value: "14",
+  },
+  {
+    id: 15,
+    value: "15",
+  },
+  {
+    id: 16,
+    value: "16",
+  },
+  {
+    id: 17,
+    value: "17",
+  },
+  {
+    id: 18,
+    value: "18",
+  },
+  {
+    id: 19,
+    value: "19",
+  },
+  {
+    id: 20,
+    value: "20",
+  },
+  {
+    id: 21,
+    value: "21",
+  },
+  {
+    id: 22,
+    value: "22",
+  },
+  {
+    id: 23,
+    value: "23",
+  },
+  {
+    id: 24,
+    value: "24",
+  },
+  {
+    id: 25,
+    value: "25",
+  },
+  {
+    id: 26,
+    value: "26",
+  },
+  {
+    id: 27,
+    value: "27",
+  },
 ];
 
 const Home = () => {
@@ -109,7 +164,14 @@ const Home = () => {
 
   const clearField = (e) => {
     e.preventDefault();
-    setForm({ tower: "", date: "", time: "", commentary: "" });
+    setForm({
+      tower: "",
+      floor: "",
+      room: "",
+      date: "",
+      time: "",
+      commentary: "",
+    });
   };
 
   return (
